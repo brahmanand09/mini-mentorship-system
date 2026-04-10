@@ -113,7 +113,7 @@ cd client
 npm install
 npm run dev
 ```
-
+ 
 ---
 
 ## 🔐 Authentication
@@ -123,6 +123,48 @@ npm run dev
 
   * `mentor`
   * `student`
+
+### 👤 Student Registration
+
+* Students can register using the signup page
+* Automatically creates:
+
+  * User account
+  * Student profile
+
+---
+
+### 👨‍🏫 Mentor Account Creation
+
+Mentor accounts are **not created via UI**.
+They are created manually using a script.
+
+#### Run Script:
+
+```bash
+cd server
+npm run createMentor
+```
+
+#### Default Mentor Credentials:
+
+```
+Email: mentor@test.com
+Password: 123456
+```
+
+---
+
+### 🛡️ Role-Based Access
+
+| Feature         | Mentor | Student |
+| --------------- | ------ | ------- |
+| View Students   | ✅      | ❌       |
+| Add Student     | ✅      | ❌       |
+| Submit Review   | ✅      | ❌       |
+| View Reviews    | ❌      | ✅       |
+| AI Summary Tool | ✅      | ✅       |
+
 
 ---
 
