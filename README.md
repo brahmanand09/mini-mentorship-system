@@ -304,13 +304,34 @@ Student → Dashboard → View Reviews
 
 ---
 
-## 📸 Demo (Optional)
+## 📸 Demo
+
+<img width="1348" height="641" alt="image" src="https://github.com/user-attachments/assets/62b9ac42-82d6-4989-941c-36aa8d30c1d0" />
+
+---
+
+<img width="1352" height="634" alt="image" src="https://github.com/user-attachments/assets/9ada42a6-1628-48eb-9c51-514db376d7be" />
+
+
+---
 
 <img width="1355" height="572" alt="image" src="https://github.com/user-attachments/assets/43064ede-91cb-4293-9596-91dbb81a0d3d" />
 
 ---
 
 <img width="1347" height="639" alt="image" src="https://github.com/user-attachments/assets/4d81953f-89f0-4628-9040-c7d09a44cef0" />
+
+---
+
+<img width="1339" height="573" alt="image" src="https://github.com/user-attachments/assets/720ef925-4d5c-44eb-be9f-4e7b8ce7c5b8" />
+
+---
+
+<img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/3cd3ba64-d842-4916-9f60-4c9eaceedeb2" />
+
+---
+
+<img width="1349" height="592" alt="image" src="https://github.com/user-attachments/assets/30e52590-d597-4d88-830b-ae60df274799" />
 
 ---
 
