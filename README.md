@@ -77,8 +77,7 @@ server/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/sarthi-mentorship.git
-cd sarthi-mentorship
+git clone https://github.com/brahmanand09/mini-mentorship-system.git
 ```
 
 ---
