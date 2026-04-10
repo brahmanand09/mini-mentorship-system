@@ -57,7 +57,8 @@ client/
  │   ├── components/
  │   ├── hooks/
  │   ├── pages/
- │   └── App.tsx
+ |   ├── App.tsx/
+ │   └── main.tsx
 
 server/
  ├── src/
@@ -68,6 +69,8 @@ server/
  │   ├── routes/
  │   ├── services/
  │   └── utils/
+ ├── App.ts
+ ├── server.ts
 ```
 
 ---
