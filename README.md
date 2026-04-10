@@ -155,6 +155,13 @@ Password: 123456
 
 ---
 
+## ⚙️ Backend Scripts
+
+- `npm run dev` → Start server
+- `npm run createMentor` → Create default mentor account
+
+---
+
 ### 🛡️ Role-Based Access
 
 | Feature         | Mentor | Student |
