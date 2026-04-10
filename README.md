@@ -306,7 +306,11 @@ Student → Dashboard → View Reviews
 
 ## 📸 Demo (Optional)
 
-👉 Add your demo video or screenshots here
+<img width="1355" height="572" alt="image" src="https://github.com/user-attachments/assets/43064ede-91cb-4293-9596-91dbb81a0d3d" />
+
+---
+
+<img width="1347" height="639" alt="image" src="https://github.com/user-attachments/assets/4d81953f-89f0-4628-9040-c7d09a44cef0" />
 
 ---
 
