@@ -23,7 +23,7 @@ export default function Dashboard() {
       const studentId = localStorage.getItem("studentId");
       if (studentId) fetchReviews(studentId);
     }
-  }, []);
+  }, [role]);
 
   const fetchStudents = async () => {
     try {
@@ -40,6 +40,12 @@ export default function Dashboard() {
   const fetchReviews = async (studentId: string) => {
     try {
       const res = await api.get(`/reviews/${studentId}`);
+
+      if (role === "student") {
+        const studentId = localStorage.getItem("studentId");
+        if (studentId) fetchReviews(studentId);
+      }
+
       setReviews(res.data || []);
     } catch {
       setError("Failed to load your reviews");
@@ -62,6 +68,7 @@ export default function Dashboard() {
       });
 
       setSuccess("Review submitted successfully!");
+      fetchStudents();
       setTimeout(() => {
         setSelectedStudent(null);
         setSuccess("");
@@ -72,7 +79,7 @@ export default function Dashboard() {
   };
 
   if (loading) return <Loader />;
-  if (error) return <ErrorBox message={error} />;
+  { error && <ErrorBox message={error} /> }
 
   return (
     <div className="dashboard-container">
@@ -106,8 +113,38 @@ export default function Dashboard() {
         <>
           <div className="section-header">
             <h2>Your Reviews</h2>
-            <p>Feedback from your mentor</p>
+            <p>Track your growth and mentor feedback</p>
           </div>
+
+          {/* Progress Summary */}
+          <div className="progress-cards">
+            <div className="progress-card">
+              <h3>Total Reviews</h3>
+              <p>{reviews.length}</p>
+            </div>
+
+            <div className="progress-card">
+              <h3>Latest Status</h3>
+              <p>
+                {reviews.length > 0 ? "Improving 📈" : "No Data"}
+              </p>
+            </div>
+          </div>
+
+          {/* Latest Review Highlight */}
+          {reviews.length > 0 && (
+            <div className="latest-review">
+              <h3>Latest Review</h3>
+              <p>{reviews[0].review}</p>
+
+              {reviews[0].aiSummary && (
+                <div className="ai-summary">
+                  <strong>AI Summary</strong>
+                  <pre>{reviews[0].aiSummary}</pre>
+                </div>
+              )}
+            </div>
+          )}
 
           <div className="reviews-container">
             {reviews.length === 0 ? (
@@ -166,7 +203,7 @@ export default function Dashboard() {
               <button className="cancel-btn" onClick={() => setSelectedStudent(null)}>
                 Cancel
               </button>
-              <button 
+              <button
                 className="submit-btn"
                 onClick={submitReview}
                 disabled={!reviewText.trim()}

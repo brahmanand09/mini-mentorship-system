@@ -813,3 +813,20 @@ button:hover {
   font-size: 12px;
   margin-top: 8px;
 }
+
+.progress-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  .progress-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.latest-review {
+  margin-bottom: 30px;
+}
