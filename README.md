@@ -37,7 +37,7 @@ A full-stack **Mentorship Evaluation Platform** where mentors can review student
 
 ### Backend
 
-* Node.js + Express
+* Node.js + Express + TypeScript
 * MongoDB + Mongoose
 * JWT Authentication
 * Express Validator
